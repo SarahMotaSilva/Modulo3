@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Aluno</title>
+  <style>
+    body { font-family: Arial; max-width: 600px; margin: 40px auto; }
+    label { display: block; margin-top: 15px; font-weight: bold; }
+    input, select, textarea { width: 100%; padding: 8px;
+      margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; }
+    button { margin-top: 20px; padding: 12px 24px;
+      background: #1A73E8; color: white; border: none;
+      border-radius: 4px; cursor: pointer; font-size: 16px; }
+    button:hover { background: #1557b0; }
+    fieldset { border: 1px solid #ddd; padding: 15px;
+      border-radius: 8px; margin-top: 20px; }
+    legend { font-weight: bold; color: #1A73E8; }
+  </style>
+</head>
+<body>
+  <h1>Cadastro de Aluno</h1>
+  <form action="#" method="POST">
+
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" name="nome"
+        required minlength="3" placeholder="João da Silva">
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email"
+        required placeholder="joao@email.com">
+
+      <label for="nascimento">Data de nascimento:</label>
+      <input type="date" id="nascimento" name="nascimento">
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone"
+        placeholder="(34) 99999-9999">
+    </fieldset>
+
+    <fieldset>
+      <legend>Dados Acadêmicos</legend>
+      <label for="curso">Curso:</label>
+      <select id="curso" name="curso" required>
+        <option value="">Selecione o curso...</option>
+        <option value="ec">Eng. de Computação</option>
+        <option value="si">Sistemas de Informação</option>
+        <option value="cc">Ciência da Computação</option>
+      </select>
+
+      <label for="periodo">Período:</label>
+      <input type="number" id="periodo" name="periodo"
+        min="1" max="10" placeholder="1">
+
+      <label>Turno:</label>
+      <label><input type="radio" name="turno"
+        value="manha"> Manhã</label>
+      <label><input type="radio" name="turno"
+        value="noite" checked> Noite</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Observações</legend>
+      <label><input type="checkbox" name="termos" required>
+        Aceito os termos de uso</label>
+
+      <label for="obs">Comentários:</label>
+      <textarea id="obs" name="obs" rows="4"
+        placeholder="Algo que deseja informar?"></textarea>
+    </fieldset>
+
+    <button type="submit">Cadastrar</button>
+    <button type="reset">Limpar</button>
+  </form>
+</body>
+</html>
