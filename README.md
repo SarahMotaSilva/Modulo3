@@ -1,7 +1,7 @@
 
 # Módulo 3 - Projeto Front-end
 
-Este repositório contém o desenvolvimento do projeto final/intermediário do Módulo 3, focado no aprimoramento de habilidades em desenvolvimento web utilizando tecnologias modernas e práticas de estilização avançada.
+Este repositório contém o desenvolvimento do Módulo 3, focado no aprimoramento de habilidades em desenvolvimento web utilizando tecnologias modernas e práticas de estilização avançada.
 
 ---
 
